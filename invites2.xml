@@ -1,0 +1,58 @@
+<format best-of="3">
+    <veto>
+        <decider>
+            <match id="veto-decider">No Return</match>
+        </decider>
+        <options>
+            <format name="CTW" best-of="1">
+                <veto>
+                    <decider>
+                        <veto-selector />
+                    </decider>
+                    <options>
+                        <match>Jurassic</match>
+                        <match>Java II</match>
+                        <match>Cool Steak</match>
+                    </options>
+                    <order ban-until="1" starting-team="2" />
+                </veto>
+            </format>
+            <format name="DTC" best-of="1">
+                <veto>
+                    <decider>
+                        <veto-selector />
+                    </decider>
+                    <options>
+                        <match>Cyanide</match>
+                        <match>Descent</match>
+                        <match>Wallop 9000</match>
+                    </options>
+                    <order ban-until="1" starting-team="2" />
+                </veto>
+            </format>
+            <format name="Conquest" best-of="3">
+                <veto>
+                    <decider>
+                        <veto-selector />
+                    </decider>
+                    <options>
+                        <match>Cobalt</match>
+                        <match>Forge</match>
+                        <match>Scorched</match>
+                        <match>Outcast 2</match>
+                        <format name="Nartica" best-of="1">
+                            <match>Nartica</match>
+                            <match>Nartica - OT</match>
+                        </format>
+                    </options>
+                    <order ban-until="3" starting-team="2" />
+                </veto>
+            </format>
+        </options>
+        <order>
+            <pick team="1" />
+            <pick team="2" />
+            <pick team="1" />
+        </order>
+    </veto>
+</format>
